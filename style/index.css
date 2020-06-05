@@ -1,1 +1,93 @@
 /* Add CSS styling here */
+Add CSS styling here
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;    
+font-size: 100%;  
+font: inherit;  
+vertical-align: baseline; 
+}
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: #1F2833;
+    font-family: 'Tenali Ramakrishna', sans-serif;
+}
+header{
+    display:flex;
+    flex-direction:column;
+}
+h1, h2{
+    font-size: 4rem;
+    font-family: 'La Belle Aurore', cursive;
+    text-align: center;
+    color: #66FCF1;
+}
+h2{
+    font-size: 3rem;
+}
+p{
+    width: 60%;
+    margin:auto;
+    font-size: 1.6rem;
+    color:#C5C6C7;
+    text-align: center;
+}
+nav{
+    width:40%;
+    margin: auto;
+    text-align: center;
+}
+nav a{
+    background-color: #0B0C10;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: .5%;
+    color: #66FCF1;
+    border-radius: 10%;
+}
+nav a:hover{
+    background-color: #66FCF1;
+    color: #0B0C10;
+}
+.bgImg{
+    background-image: url(https://images.unsplash.com/photo-1558943743-20d18e12a015?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+    width: 100%;
+    height: 500px;
+    background-repeat: none;
+    background-size: cover;
+}
+.bottomSection{
+    height: 60vh;
+    display:flex;
+}
+.projectImages{
+    padding:2%;
+    width: 70%;
+    display:flex;
+}
+.projectImages img{
+    width: 20%;
+    height: 60vh;
+    padding:1%;
+}
+.bottomText{
+    width: 20%;
+    height: 30vh;
+    display:flex;
+    flex-wrap: wrap;
+} 
