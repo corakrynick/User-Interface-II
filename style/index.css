@@ -48,13 +48,15 @@ p{
     text-align: center;
 }
 nav{
-    width:40%;
+    width:50%;
     margin: auto;
     text-align: center;
 }
 nav a{
+    width: 15%;
+    height:5%;
     background-color: #0B0C10;
-    font-size: 2rem;
+    font-size: 1.6rem;
     text-decoration: none;
     padding: .5%;
     color: #66FCF1;
@@ -72,22 +74,48 @@ nav a:hover{
     background-size: cover;
 }
 .bottomSection{
+    width: 100%;
     height: 60vh;
     display:flex;
+    flex-direction: row;
 }
 .projectImages{
+    margin-right:0;
     padding:2%;
     width: 70%;
     display:flex;
 }
 .projectImages img{
-    width: 20%;
+    width: 30%;
     height: 60vh;
     padding:1%;
 }
 .bottomText{
-    width: 20%;
+    padding: 2%;
+    width: 60%;
     height: 30vh;
-    display:flex;
-    flex-wrap: wrap;
+    text-align: center;
 } 
+.bottomText p{
+    height: 20vh;
+    text-align: center;
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+button{
+    width: 15%;
+    height:5%;
+    background-color: #0B0C10;
+    font-size: 1.6rem;
+    text-decoration: none;
+    padding: .5%;
+    color: #66FCF1;
+    border-radius: 10%;
+    margin-bottom: 3%;
+}
+button:hover{
+    background-color: #66FCF1;
+    color: #0B0C10;
+}
