@@ -24,8 +24,8 @@ vertical-align: baseline;
     
 }
 body{
-    background-color: #1F2833;
-    font-family: 'Tenali Ramakrishna', sans-serif;
+    background-color:#d4efdf;
+    font-family: 'Amatic SC', cursive;
 }
 header{
     display:flex;
@@ -33,9 +33,9 @@ header{
 }
 h1, h2{
     font-size: 4rem;
-    font-family: 'La Belle Aurore', cursive;
+    font-family: 'Over the Rainbow', cursive;
     text-align: center;
-    color: #66FCF1;
+    color: #1e8449;
 }
 h2{
     font-size: 3rem;
@@ -44,7 +44,7 @@ p{
     width: 60%;
     margin:auto;
     font-size: 1.6rem;
-    color:#C5C6C7;
+    color:#5d6d7e;
     text-align: center;
 }
 nav{
@@ -55,23 +55,26 @@ nav{
 nav a{
     width: 15%;
     height:5%;
-    background-color: #0B0C10;
+    background-color: #7dcea0;
     font-size: 1.6rem;
     text-decoration: none;
     padding: .5%;
-    color: #66FCF1;
+    color:  #5d6d7e;
     border-radius: 10%;
 }
 nav a:hover{
-    background-color: #66FCF1;
-    color: #0B0C10;
+    background-color: #5d6d7e;
+    color: #7dcea0;
 }
 .bgImg{
-    background-image: url(https://images.unsplash.com/photo-1558943743-20d18e12a015?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+    background-image: url(https://images.unsplash.com/photo-1497211419994-14ae40a3c7a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
     width: 100%;
-    height: 500px;
-    background-repeat: none;
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 .bottomSection{
     width: 100%;
@@ -85,10 +88,14 @@ nav a:hover{
     width: 70%;
     display:flex;
 }
+  
 .projectImages img{
     width: 30%;
     height: 60vh;
     padding:1%;
+}
+.projectImages img:hover{
+    opacity: 0.3;   
 }
 .bottomText{
     padding: 2%;
@@ -107,15 +114,84 @@ footer{
 button{
     width: 15%;
     height:5%;
-    background-color: #0B0C10;
+    background-color: #7dcea0;
     font-size: 1.6rem;
     text-decoration: none;
     padding: .5%;
-    color: #66FCF1;
-    border-radius: 10%;
+    color: #5d6d7e;
+    border-radius: 5%;
     margin-bottom: 3%;
 }
 button:hover{
-    background-color: #66FCF1;
-    color: #0B0C10;
+    background-color: #5d6d7e;
+    color: #7dcea0;
 }
+
+@media (max-width:800px){
+    .projectImages{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: auto;
+    }
+    .projectImages img{
+        width:50%;
+        height: 40vh;
+        padding: 3%;
+    }
+    .bottomText{
+        width:60%;
+        height: 20vh;
+    }
+    .bottomText p{
+        width: 100%;
+        height: 20vh;
+    }
+    button{
+        width:60%;
+        height:20%;
+    }
+}
+@media (max-width: 500px){
+    nav a{
+        margin: auto;
+        width:50%;
+        height: 20%;
+        
+        display: flex;
+        flex-direction: column;
+    }
+    .bgImg{
+        background-image: url(https://images.unsplash.com/photo-1497211419994-14ae40a3c7a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+        width: 90%;
+        margin: auto;
+        background-attachment: local;
+    }
+   .projectImages{
+      width:100%;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+   }
+   .projectImages img{
+       width: 40%;
+       height:50%;
+   }
+   .bottomText{
+       margin:auto;
+   }
+   footer{
+       background-color: #7dcea0;
+   }
+   button{
+       width:80%;
+       height:20%;
+   }
+}
+
+/* #a6acaf
+#5d6d7e
+#7dcea0
+#eaeded
+#d4efdf
+#1e8449 */
